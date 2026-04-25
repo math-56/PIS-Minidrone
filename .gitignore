@@ -38,3 +38,15 @@ codegen/
 # SimBiology backup files
 *.sbproj.backup
 *.sbproj.bak
+
+# Fichiers de cache et de compilation Simulink
+slprj/
+*.slxc
+*.autosave
+*.asv
+*.bak
+~*
+
+# Dossiers de génération de code (si applicable)
+*_ert_rtw/
+*_grt_rtw/
