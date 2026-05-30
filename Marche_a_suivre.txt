@@ -9,19 +9,19 @@ init.vb       = [0, 0, 0];
 init.euler    = [0, 0, 0];
 init.angRates = [0, 0, 0];
 
-Cas 1 : Chute libre (free fall) fonctionne
+Cas 1 : Chute libre (free fall)
 init.posNED   = [57, 95, -10]; 
 init.vb       = [0, 0, 0];
 init.euler    = [0, 0, 0];
 init.angRates = [0, 0, 0];
 
-Cas 2 : Lacher sur le dos (upside down) ! FONCTIONNE PAS !
-init.posNED   = [57, 95, -5]; 
+Cas 2 : Lacher sur le dos (upside down)
+init.posNED   = [35, 100, -5]; 
 init.vb       = [0, 0, 0];
 init.euler    = [-pi, 0, 0]; 
 init.angRates = [0, 0, 0];
 
-Cas 3 : Lancer main (freehand throw) fonctionne
+Cas 3 : Lancer main (freehand throw)
 init.posNED   = [57, 95, -1.5]; 
 init.vb       = [1, 0.5, -2];
 init.euler    = [0.5, -0.3, 0]; 
