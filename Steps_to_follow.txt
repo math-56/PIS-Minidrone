@@ -14,16 +14,21 @@ init.vb       = [0, 0, 0];
 init.euler    = [0, 0, 0];
 init.angRates = [0, 0, 0];
 
-Case 2 : Upside down release
+Important : to enable the motor perturbation, flip the manual switch found in the first layer of parrotMinidroneHover.slx
+
+
+Case 2 : Freehand throw
+takeOffDuration = 0;
+init.posNED   = [57, 95, -1.5]; 
+init.vb       = [1, 0.5, -2];
+init.euler    = [0, 0, 0]; 
+init.angRates = [2, -1, 0];
+
+Case 3 : Upside down release
 takeOffDuration = 0;
 init.posNED   = [35, 100, -5]; 
 init.vb       = [0, 0, 0];
 init.euler    = [-pi, 0, 0]; 
 init.angRates = [0, 0, 0];
 
-Case 3 : Freehand throw
-takeOffDuration = 0;
-init.posNED   = [57, 95, -1.5]; 
-init.vb       = [1, 0.5, -2];
-init.euler    = [0, 0, 0]; 
-init.angRates = [2, -1, 0]; 
+Important : for the last case, there is a manual switch to be flipped. See the Simulink for more infos.
