@@ -1,27 +1,28 @@
-À changer des variables dans le workspace :
+Initialise variables in workspace (copy/paste in command window)
 
 init et timer, timer = 0, takeOffDuration = 0
-<!> sauf si décollage du sol, timer = 200, takeOffDuration = 1;
 
-Cas 0 : Décollage du sol (hover)
+<!> except if take off from ground, timer = 200, takeOffDuration = 1;
+
+Cas 0 : Take off from ground (hover)
 init.posNED   = [57, 95, 0];  
 init.vb       = [0, 0, 0];
 init.euler    = [0, 0, 0];
 init.angRates = [0, 0, 0];
 
-Cas 1 : Chute libre (free fall)
-init.posNED   = [57, 95, -10]; 
+Cas 1 : Free fall
+init.posNED   = [57, 95, -15]; % or [57, 95, -10]
 init.vb       = [0, 0, 0];
 init.euler    = [0, 0, 0];
 init.angRates = [0, 0, 0];
 
-Cas 2 : Lacher sur le dos (upside down)
+Cas 2 : Upside down release
 init.posNED   = [35, 100, -5]; 
 init.vb       = [0, 0, 0];
 init.euler    = [-pi, 0, 0]; 
 init.angRates = [0, 0, 0];
 
-Cas 3 : Lancer main (freehand throw)
+Cas 3 : Freehand throw
 init.posNED   = [57, 95, -1.5]; 
 init.vb       = [1, 0.5, -2];
 init.euler    = [0, 0, 0]; 
