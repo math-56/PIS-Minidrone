@@ -1,35 +1,27 @@
 Initialise variables in workspace (copy/paste in command window)
 
-init et timer, timer = 0, takeOffDuration = 0
-timer is a variable in the 
-<!> except if take off from ground, timer = 200, takeOffDuration = 1;
-
-Cas 0 : Take off from ground (hover)
-timer = 200;
+Case 0 : Take off from ground (hover)
 takeOffDuration = 1;
 init.posNED   = [57, 95, 0];  
 init.vb       = [0, 0, 0];
 init.euler    = [0, 0, 0];
 init.angRates = [0, 0, 0];
 
-Cas 1 : Free fall
-timer = 0;
+Case 1 : Free fall
 takeOffDuration = 0;
 init.posNED   = [57, 95, -15]; % or [57, 95, -10]
 init.vb       = [0, 0, 0];
 init.euler    = [0, 0, 0];
 init.angRates = [0, 0, 0];
 
-Cas 2 : Upside down release
-timer = 0;
+Case 2 : Upside down release
 takeOffDuration = 0;
 init.posNED   = [35, 100, -5]; 
 init.vb       = [0, 0, 0];
 init.euler    = [-pi, 0, 0]; 
 init.angRates = [0, 0, 0];
 
-Cas 3 : Freehand throw
-timer = 0;
+Case 3 : Freehand throw
 takeOffDuration = 0;
 init.posNED   = [57, 95, -1.5]; 
 init.vb       = [1, 0.5, -2];
